@@ -91,5 +91,5 @@ for still in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
 	#set "q" as the key to exit the program when pressed
 	key = cv2.waitKey(1) & 0xFF
 	if key == ord("q"):
-		GPIO.output(buzzer, True)
+		GPIO.output(buzzer, False)
 		break
